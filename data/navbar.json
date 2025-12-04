@@ -1,0 +1,28 @@
+{
+  "logoText": "Md. Shafikul Islam",
+  "menu": [
+    {
+      "id": 1764833664805,
+      "label": "Home",
+      "link": "/home"
+    },
+    {
+      "id": 1764846629179,
+      "label": "About",
+      "link": "/about"
+    },
+    {
+      "id": 1764846653370,
+      "label": "Services",
+      "link": "/services"
+    },
+    {
+      "id": 1764846681058,
+      "label": "Portfolio",
+      "link": "/portfolio"
+    }
+  ],
+  "callText": "Contact Me",
+  "phone": "+8801813166694",
+  "mode": "light"
+}
