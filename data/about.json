@@ -1,0 +1,19 @@
+{
+  "title": "About Me",
+  "name": "MD. SHAFIKUL ISLAM",
+  "subtitle": "Professional Web Developer & Digital Marketing Specialist",
+  "paragraph1": "I am a dedicated and professional Web Developer and Digital Marketing Specialist based in Chittagong Division, Bangladesh...",
+  "paragraph2": "I have experience working with various technologies including WordPress, React.js, Node.js...",
+  "features": [
+    "Modern, Responsive Websites",
+    "SEO-Friendly Development",
+    "WordPress, React.js, Node.js",
+    "Digital Marketing & SEO",
+    "Social Media Marketing",
+    "Online Branding Strategies"
+  ],
+  "button1": "Read More",
+  "button2": "Download CV",
+  "cvLink": "/cv.pdf",
+  "image": "/about.jpg"
+}
