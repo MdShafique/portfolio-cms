@@ -1,0 +1,49 @@
+{
+  "smallTitle": "Services",
+  "mainTitle": "What can I do?",
+  "description": "I provide services in web development, website design, WordPress, ReactJS, NodeJS, SEO, and digital marketing.",
+  "items": [
+    {
+      "id": 1,
+      "icon": "💻",
+      "iconBg": "#EDE9FE",
+      "title": "Website Design",
+      "text": "Modern, attractive, and user-friendly website designs."
+    },
+    {
+      "id": 2,
+      "icon": "⚙️",
+      "iconBg": "#C4B5FD",
+      "title": "Website Development",
+      "text": "Fully functional websites using ReactJS, WordPress, or custom development."
+    },
+    {
+      "id": 3,
+      "icon": "🛠",
+      "iconBg": "#EDE9FE",
+      "title": "WordPress Development",
+      "text": "Theme customization, plugin development & WooCommerce."
+    },
+    {
+      "id": 4,
+      "icon": "⚡",
+      "iconBg": "#EDE9FE",
+      "title": "React.js Frontend",
+      "text": "Fast, dynamic, interactive modern React applications."
+    },
+    {
+      "id": 5,
+      "icon": "🧠",
+      "iconBg": "#EDE9FE",
+      "title": "Node.js Backend",
+      "text": "High performance API backend & secure server applications."
+    },
+    {
+      "id": 6,
+      "icon": "📈",
+      "iconBg": "#EDE9FE",
+      "title": "SEO Optimization",
+      "text": "Improve Google ranking, grow organic traffic, and visibility."
+    }
+  ]
+}

@@ -36,7 +36,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             { name: "Settings", href: "/admin/dashboard/settings" },
             { name: "Navbar Setting", href: "/admin/dashboard/navbar-setting" },
             { name: "Hero Setting", href: "/admin/dashboard/hero-setting" },
-            { name: "About Setting", href: "/admin/dashboard/about-setting" }
+            { name: "About Setting", href: "/admin/dashboard/about-setting" },
+            { name: "Services Setting", href: "/admin/dashboard/services-setting" },
+
 
 
 

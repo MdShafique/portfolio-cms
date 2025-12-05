@@ -40,7 +40,7 @@ export default function About() {
             ))}
           </div>
 
-          {/* BUTTONS */}
+          BUTTONS
           <div className="flex gap-4 mt-8">
             <button className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow">
               {about.button1}
@@ -57,7 +57,7 @@ export default function About() {
 
         {/* RIGHT IMAGE SECTION */}
         <div className="relative flex justify-center">
-          <div className="absolute -top-6 right-10 w-16 h-16 bg-indigo-600 rounded-lg"></div>
+          {/* <div className="absolute -top-6 right-10 w-16 h-16 bg-indigo-600 rounded-lg"></div> */}
 
           <Image
             src={about.image}
@@ -67,7 +67,7 @@ export default function About() {
             className="rounded-2xl shadow-xl relative z-10"
           />
 
-          <div className="absolute bottom-6 left-10 w-16 h-16 bg-indigo-600 rounded-lg"></div>
+          {/* <div className="absolute bottom-6 left-10 w-16 h-16 bg-indigo-600 rounded-lg"></div> */}
         </div>
 
       </div>

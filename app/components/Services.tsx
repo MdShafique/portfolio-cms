@@ -1,29 +1,48 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
 export default function Services() {
-  const items = [
-    "Web Development",
-    "Responsive Design",
-    "UI/UX Design",
-    "SEO Optimization",
-    "E-commerce",
-    "Portfolio Websites",
-  ];
+  const [services, setServices] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/services")
+      .then((res) => res.json())
+      .then((data) => setServices(data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  if (!services) return null;
 
   return (
-    <section id="services" className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-10">What Can I Do?</h2>
+    <section className="py-20 bg-gray-50">
+      <div className="text-center mb-10">
+        <p className="text-indigo-600 font-medium">{services.smallTitle}</p>
+        <h2 className="text-4xl font-bold mt-2">{services.mainTitle}</h2>
+        <p className="text-gray-600 max-w-3xl mx-auto mt-4">
+          {services.description}
+        </p>
+      </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {items.map((item) => (
+      <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+        {services.items.map((s: any) => (
+          <div
+            key={s.id}
+            className="bg-white px-6 py-10 rounded-2xl shadow hover:-translate-y-1 hover:shadow-lg transition-all cursor-pointer text-center"
+          >
             <div
-              key={item}
-              className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
+              className="mx-auto mb-4 w-14 h-14 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: s.iconBg }}
             >
-              <h3 className="font-semibold text-lg">{item}</h3>
-              <p className="text-gray-600 mt-2">High quality service.</p>
+              <span className="text-2xl">{s.icon}</span>
             </div>
-          ))}
-        </div>
+
+            <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
+
+            <p className="text-gray-600 text-sm">{s.text}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
