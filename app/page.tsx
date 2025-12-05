@@ -2,7 +2,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
-import ChooseMe from "./components/ChooseMe";
+import Skills from "./components/Skills";
+// import ChooseMe from "./components/ChooseMe";
 import Portfolio from "./components/Portfolio";
 import BlogSection from "./components/BlogSection";
 import Testimonial from "./components/Testimonial"; // optional
@@ -16,7 +17,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <ChooseMe />
+      <Skills />
+      {/* <ChooseMe /> */}
       <Portfolio />
       <BlogSection />
       <Contact />

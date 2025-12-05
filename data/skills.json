@@ -1,0 +1,16 @@
+{
+  "smallTitle": "Skills",
+  "mainTitle": "Why Choose Me",
+  "description": "I focus on creating modern, responsive, and result-driven websites that truly represent your business. Every project is crafted with attention to detail and user-friendly experience.",
+  "bgColor": "#6bbad6",
+  "skills": [
+    "HTML, CSS, JavaScript",
+    "WordPress Customization & Development",
+    "SEO Optimization (On-page / Off-page)",
+    "Social Media Page Management",
+    "React.js, Node.js",
+    "Responsive Web Design (Mobile Friendly)",
+    "Facebook & Instagram Marketing",
+    "Google Search Console / Analytics"
+  ]
+}

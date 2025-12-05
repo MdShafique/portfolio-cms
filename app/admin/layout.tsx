@@ -38,6 +38,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             { name: "Hero Setting", href: "/admin/dashboard/hero-setting" },
             { name: "About Setting", href: "/admin/dashboard/about-setting" },
             { name: "Services Setting", href: "/admin/dashboard/services-setting" },
+            { name: "Skills Setting", href: "/admin/dashboard/skills-setting" },
+            { name: "Portfolio Setting", href: "/admin/dashboard/portfolio-setting" },
+
 
 
 

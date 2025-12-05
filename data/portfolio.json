@@ -1,0 +1,33 @@
+{
+  "smallTitle": "Portfolio",
+  "mainTitle": "My Amazing Work",
+  "description": "Here you’ll find some of my recent work in web development and digital solutions.",
+  "categories": ["Web Design", "Web Development", "Software Development", "Branding", "Ecommerce"],
+  "items": [
+    {
+      "id": 1,
+      "image": "/p1.jpg",
+      "category": "Web Design"
+    },
+    {
+      "id": 2,
+      "image": "/p2.jpg",
+      "category": "Web Development"
+    },
+    {
+      "id": 3,
+      "image": "/p3.jpg",
+      "category": "Branding"
+    },
+    {
+      "id": 4,
+      "image": "/p4.jpg",
+      "category": "Ecommerce"
+    },
+    {
+      "id": 5,
+      "image": "/p5.jpg",
+      "category": "Software Development"
+    }
+  ]
+}
