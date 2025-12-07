@@ -20,6 +20,11 @@
       "id": 1764846681058,
       "label": "Portfolio",
       "link": "/portfolio"
+    },
+    {
+      "id": 1765095958074,
+      "label": "Contact",
+      "link": "/contact"
     }
   ],
   "callText": "Contact Me",

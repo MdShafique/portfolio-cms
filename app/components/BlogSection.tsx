@@ -1,27 +1,56 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
 export default function BlogSection() {
-  const posts = [
-    { id: 1, title: "JavaScript Tips", image: "/portfolio.png" },
-    { id: 2, title: "React Best Practices", image: "/portfolio.png" },
-    { id: 3, title: "Next.js Guide", image: "/portfolio.png" },
-  ];
+  const [blog, setBlog] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/blog")
+      .then((res) => res.json())
+      .then((data) => setBlog(data));
+  }, []);
+
+  if (!blog) return null;
 
   return (
-    <section id="blog" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-10 text-center">Explore My Blog</h2>
+    <section className="py-20">
+      <div className="text-center mb-10 px-4">
+        <p className="text-indigo-600">{blog.smallTitle}</p>
+        <h2 className="text-4xl font-bold mt-2">{blog.mainTitle}</h2>
+        <p className="max-w-3xl mx-auto text-gray-600 mt-4">
+          {blog.description}
+        </p>
+      </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {posts.map((p) => (
-            <div key={p.id} className="bg-white rounded-xl shadow p-4">
-              <img src={p.image} className="rounded-lg" />
-              <h3 className="font-semibold text-lg mt-4">{p.title}</h3>
-              <p className="text-gray-600 text-sm mt-2">
-                A brief introduction of the blog post.
-              </p>
-              <button className="mt-4 text-indigo-600">Read More →</button>
+      <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+        {blog.items.map((post: any) => (
+          <div
+            key={post.id}
+            className="rounded-xl shadow overflow-hidden bg-white"
+          >
+            <Image
+              src={post.image}
+              width={600}
+              height={400}
+              alt={post.title}
+              className="w-full h-56 object-cover"
+            />
+
+            <div className="p-6 bg-indigo-600 text-white rounded-b-xl">
+              <h3 className="text-lg font-semibold">{post.title}</h3>
+              <p className="text-sm mt-2 opacity-90">{post.short}</p>
+
+              <a
+                href={`/blog/${post.slug}`}
+                className="mt-3 inline-block font-semibold underline"
+              >
+                READ MORE
+              </a>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

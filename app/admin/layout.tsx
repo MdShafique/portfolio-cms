@@ -30,8 +30,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <nav className="p-4 space-y-2">
           {[
             { name: "Dashboard", href: "/admin/dashboard" },
-            { name: "Posts", href: "/admin/dashboard/posts" },
-            { name: "Users", href: "/admin/dashboard/users" },
+            // { name: "Posts", href: "/admin/dashboard/posts" },
+            // { name: "Users", href: "/admin/dashboard/users" },
             { name: "Media", href: "/admin/dashboard/media" },
             { name: "Settings", href: "/admin/dashboard/settings" },
             { name: "Navbar Setting", href: "/admin/dashboard/navbar-setting" },
@@ -40,6 +40,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             { name: "Services Setting", href: "/admin/dashboard/services-setting" },
             { name: "Skills Setting", href: "/admin/dashboard/skills-setting" },
             { name: "Portfolio Setting", href: "/admin/dashboard/portfolio-setting" },
+            { name: "Blog Setting", href: "/admin/dashboard/blog-setting" },
+            { name: "Contact Setting", href: "/admin/dashboard/contact-setting" },
+
 
 
 

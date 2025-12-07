@@ -1,0 +1,28 @@
+{
+  "smallTitle": "My Blog",
+  "mainTitle": "Explore My Blog!",
+  "description": "Welcome to my blog, where I share thoughts, tips, and guides on web development and digital marketing.",
+  "items": [
+    {
+      "id": 1,
+      "title": "The Tapestry of My Portfolio",
+      "short": "From innovative designs to compelling content, each project reflects excellence.",
+      "image": "/blog1.jpg",
+      "slug": "my-portfolio-tapestry"
+    },
+    {
+      "id": 2,
+      "title": "Web Development Insights",
+      "short": "Tips, tricks, and deep insights on modern web technologies.",
+      "image": "/blog2.jpg",
+      "slug": "web-development-insights"
+    },
+    {
+      "id": 3,
+      "title": "Creative Journey Begins",
+      "short": "An inside look into the creative process and design improvements.",
+      "image": "/blog3.jpg",
+      "slug": "creative-journey"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Jessica Carmela",
+    "role": "Marketing",
+    "message": "Their creativity and attention to detail brought a unique flair to our project. Truly outstanding work!",
+    "rating": 4,
+    "image": "/testimonials/user1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Robert James",
+    "role": "CEO, TechVision",
+    "message": "Delivered exactly what we needed. Professional, fast, and highly reliable!",
+    "rating": 5,
+    "image": "/testimonials/user2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Melissa Gray",
+    "role": "Brand Manager",
+    "message": "Amazing work! Clear communication and quick turnaround time.",
+    "rating": 5,
+    "image": "/testimonials/user3.jpg"
+  }
+]
